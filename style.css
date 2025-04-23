@@ -58,6 +58,7 @@
   .nav-logo {
     width: 3rem;
     height: auto;
+    border-radius: 15px;
   }
   
   .menu {
@@ -385,8 +386,30 @@
     background-image: url(./Assets/tag-1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    backface-visibility: var(--gradient);
-    backdrop-filter: blur(5px);
+    background-position: center;
+  }
+  .card-2{
+    background-image: url(./Assets/tag-9.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+  }
+  .card-3{
+    background-image: url(./Assets/tag-2.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+  }
+  .card-4{
+    background-image: url(./Assets/tag-3.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+  }
+  .card-5{
+    background-image: url(./Assets/tag-logo.jpeg);
+  }
+  .card-6{
+    background-image: url(./Assets/tag-5.jpeg);
   }
   
   .roadmap-phase h2 {
@@ -426,19 +449,26 @@
   .cta-section {
     text-align: center;
     padding: 6rem 2rem;
-    background: white;
+    background-image: url(./Assets/tag-7.jpeg);
+    background-size: cover;
+    background-position: 70% 35%;
     color: black;
   }
   
   .cta-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2.8rem;
+    word-spacing: 3px;
+    font-weight: bolder;
     margin-bottom: 1rem;
+  }
+  .cta-section h2:hover{
+    font-variant: small-caps;
   }
   
   .cta-section p {
     margin-bottom: 2.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 450;
   }
   
   .button-group {
@@ -448,36 +478,34 @@
     gap: 1.5rem;
   }
   
+  /* blackButton and Outline button */
+  .black-button, .outline-button{
+    border: 2px solid black;
+    font-family: 'inter', sans-serif;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
   .black-button {
     background-color: black;
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 9999px;
-    font-weight: 600;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 0.05em;
-    transition: all 0.3s ease;
-    border: 2px solid black;
-    text-transform: uppercase;
+    color: var(--primary);
   }
   
   .black-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--primary-dark);
+    color: #d1d5db;
     transform: translateY(-3px);
+    border: 2px solid #d1d5db;
   }
   
   .outline-button {
     border: 2px solid black;
-    padding: 0.8rem 2rem;
-    border-radius: 9999px;
-    font-weight: 600;
-    text-decoration: none;
     color: black;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 0.05em;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
   }
   
   .outline-button:hover {
@@ -504,6 +532,7 @@
   .footer-logo img {
     width: 6rem;
     margin-bottom: 1rem;
+    border-radius: 20px;
   }
   
   .footer-links {

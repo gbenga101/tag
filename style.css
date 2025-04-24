@@ -197,13 +197,12 @@
   }
   
   /* little padding style for features and roadmap section */
-  .features, .roadmap{
+  .features, .roadmap, .whitepaper{
     padding: 3rem 1.3rem;
   }
 
   /* Features Section */
   .features {
-  /*   padding: 3rem 1.5rem; */
     background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
   }
 
@@ -444,7 +443,44 @@
     font-style: italic;
     color: var(--text-tertiary);
   }
-  
+
+  /* Whitepaper Section */
+  .whitepaper{
+    width: 100%;
+    padding-top: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .seperate{
+    margin-bottom: 1rem;
+    left: 10%;
+    transform: translateX(-60%);
+  }
+
+  .whitepaper p {
+    margin: 0 30px;
+    font-size: 1.3rem;
+    position: relative;
+  }
+  .whitepaper p::after {
+    content: "";
+    width: 100%;
+    height: 120px;
+    background-color: #4ade80;
+    background-image: linear-gradient(var(--text-tertiary), var(--text-secondary));
+    position: absolute;
+    bottom: -60%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    filter: blur(10px);
+    opacity: 0.9;
+    z-index: -1;
+  }
+
   /* CTA Section */
   .cta-section {
     text-align: center;
@@ -557,7 +593,7 @@
   }
   
   .social-icon {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.781);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -567,7 +603,7 @@
     transition: all 0.3s ease;
   }
   
-  .social-icon i {
+  .social-icon img {
     color: var(--text);
     width: 20px;
     height: 20px;

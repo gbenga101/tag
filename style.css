@@ -476,10 +476,10 @@
   .cta-section {
     text-align: center;
     padding: 6rem 2rem;
-    background-image: url(./Assets/tag-7.jpeg);
+    background-image: url(./Assets/tag-cta.jpeg);
     background-size: cover;
-    background-position: 70% 35%;
-    color: black;
+    background-position: 50% 75%;
+    color: var(--text);
   }
   
   .cta-section h2 {
